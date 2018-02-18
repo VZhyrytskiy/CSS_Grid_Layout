@@ -1,10 +1,44 @@
 .grid {
+    border: 1px dashed black;
     display: grid; /* inline-grid */
 
     /*  размер колонок
         1fr - одна фракция, которая растягивается на всю доступную область
     */
-    grid-template-columns: 100px 1fr 200px; 
+    /* grid-template-columns: 100px 1fr 200px;  */
+
+    /*  контейнер будет занимать всю доступную ширину,
+        а сами элементы будут занимать заданую ширину.
+    */
+    /* grid-template-columns: 100px 200px 200px;  */
+
+    /*  если контейнер занимает фиксированную ширину, 
+        то ширину колонок можно задавать в виде фракций
+    */
+    /* width: 600px;
+    grid-template-columns: 2fr 3fr 1fr; */
+
+    /*  если задать 4 колонки, а элементов будет 3, 
+        то появится свободное место на 100px.
+        если потом добавить элемент, то он займет все доступное пространство.
+    */
+    /* width: 600px;
+    grid-template-columns: 2fr 3fr 1fr 100px; */
+
+    /*  колонки могут подстраиваться под минимальную и максимальную ширину контента
+    */
+    /* grid-template-columns: min-content 200px max-content; */
+
+    /*  ширина колонки может изменяться в указаном диапазоне
+    */
+    /* grid-template-columns: 200px 100px minmax(100px, 300px); */
+
+    /*  можно задать повторяемость колонок и расстояние между колонками */
+    grid-template-columns: repeat(3, 2fr);
+    grid-column-gap: 15px;
+
+
+
 }
 .grid-item1 {
     background-color: red; 
