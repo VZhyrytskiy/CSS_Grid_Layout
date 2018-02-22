@@ -6,16 +6,17 @@
     2. grid-template-columns
     3. grid-column-gap
 
-## 02_grid-template-row
+## 02_grid-template-rows
 Демо как задавать ряды - формировать линии сетки.
 Привязка элемента к сетке.
 Используются свойства:
 
-    1. grid-column-start
-    2. grid-column-end
-    3. grid-row-start
-    4. grid-row-end
-    5. grid-column
-    6. grid-row
-    7. grid-area
+    1. grid-template-rows
+    2. grid-column-start
+    3. grid-column-end
+    4. grid-row-start
+    5. grid-row-end
+    6. grid-column
+    7. grid-row
+    8. grid-area
 
